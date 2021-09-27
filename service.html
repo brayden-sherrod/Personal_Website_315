@@ -9,6 +9,19 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
+  <style>
+    :root{
+      --primary-color: white;
+      --secondary-color: rgb(94, 94, 94);
+    }
+    .dark-theme{
+      --primary-color: rgb(94, 94, 94);
+      --secondary-color: white;
+    }
+    body{
+      background:var(--primary-color);
+    }
+  </style>
     <div class="cont">
         <ul class="nav">
           <li class="nav-item">
@@ -24,14 +37,30 @@
             <a class="nav-link disabled" href="service.html">Service</a>
           </li>
         </ul>
+        <button type="button" onclick="toggleDarkMode()" style="color: var(--color);" style="background-color: var(--secondary-color);">Toggle Toggle DarkMode</button>
       </div>
       <div class="cont">
         <div class="row text-center">
-                <div class="p-2 border bg-light">Service Page!</div>
+                <div class="p-2 border" style="background-color: var(--secondary-color); color: var(--primary-color);">Service Page!</div>
         </div>
     </div>
 
+    <div class="row text-center" width="80%" style="color: var(--secondary-color); padding: 40pt;">
+    <p> Service is a very important part of my life. I absolutely love being able to help others in whatever way I can, whether that is inside the workplace or in my personal life.
+    I have been serving in different organizations from a young age mostly because I was following my Dad around at that time but as I have gotten older I have still been actively serving in several areas.
+    Most recently I volunteered with an organization called <a href="https://impactretreat.com/">Impact Retreat</a> over the summer and led a group of incoming freshman students throughout the week of camp.
+    This experience allowed me to grow further in several skills such as communicating with a team, leading groups of students in both a large and smaller setting.
+    My biggest take away from my time working with Impact is the importance of frequent effective communication.
+    During the spring semester, as the counselors were preparing for camp over the summer we would meet once a week to go over more of what our roles would look like at camp as well as review the material we had gone over in the previous weeks.
+    The repetitiveness seemed redundant at first, however, I quickly realized how this repetition made it easier to ensure everyone was on the same page about what we would and would not be doing as counselors.
+    I also had the privilege of leading the FCA (<a href="https://www.fca.org/">Fellowship of Christian Athletes</a>) chapter at my high school during my senior year.
+    This position put me in a lot of uncomfotable situations at the time, but now looking back I am so thankful for these situations becuase they allowed me to grow in my interpersonal, leadership, and public speaking skills.
+    As the president of FCA I got to lead weekly member meetings as well as plan and coordinate other events with the FCA leaders at the monthly leadership meetings.
+    Currently I volunteer and serve on the worship team and media team at my church <a href="https://www.grace-bible.org/campus/anderson">Grace Anderson Campus</a> and later this semester I will be applying to serve on the roadie team with <a href="https://www.breakawayministries.org/">Breakaway Ministries</a> starting next semester.
+    </p>
+    </div>
 
+    <script src="darkMode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>

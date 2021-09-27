@@ -9,6 +9,19 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
+  <style>
+    :root{
+      --primary-color: white;
+      --secondary-color: rgb(94, 94, 94);
+    }
+    .dark-theme{
+      --primary-color: rgb(94, 94, 94);
+      --secondary-color: white;
+    }
+    body{
+      background:var(--primary-color);
+    }
+  </style>
     <div class="cont">
         <ul class="nav">
           <li class="nav-item">
@@ -24,14 +37,30 @@
             <a class="nav-link" href="service.html">Service</a>
           </li>
         </ul>
+        <button type="button" onclick="toggleDarkMode()" style="color: var(--color);" style="background-color: var(--secondary-color);">Toggle Toggle DarkMode</button>
       </div>
       <div class="cont">
         <div class="row text-center">
-                <div class="p-2 border bg-light">Qualifications Page!</div>
+                <div class="p-2 border" style="background-color: var(--secondary-color); color: var(--primary-color);">Qualifications Page!</div>
         </div>
-    </div>
+      </div>
+
+      <div class="row text-center" width="80%" style="color: var(--secondary-color); padding: 40pt;">
+        <p>I have gotten the opportunity to learn a variety of computer science skills throughout my college career.
+        Most of the skills I have acquired have come from the skills being taught directly in a course such as a programming language or a type of code organization.
+        I have also been able to grow in my soft skills like leading or being led within a team setting as well as communicating complex ideas to others.
+        This semester I am also taking a course that focuses on how to use <a href="https://www.microsoft.com/en-us/microsoft-365/excel">Microsoft Excel</a> and <a href="https://www.microsoft.com/en-us/security/business/identity-access-management/?&ef_id=Cj0KCQjwtMCKBhDAARIsAG-2Eu_6IGof2WYWIjcrl0GQHgzYcFFwBZ-ne5LPvSTiMcsykCpyViVTdv0aArgfEALw_wcB:G:s&OCID=AID2200938_SEM_Cj0KCQjwtMCKBhDAARIsAG-2Eu_6IGof2WYWIjcrl0GQHgzYcFFwBZ-ne5LPvSTiMcsykCpyViVTdv0aArgfEALw_wcB:G:s&gclid=Cj0KCQjwtMCKBhDAARIsAG-2Eu_6IGof2WYWIjcrl0GQHgzYcFFwBZ-ne5LPvSTiMcsykCpyViVTdv0aArgfEALw_wcB">Access</a> in practical ways.
+        As I have learned more about computer science and grown in my abilities I have started to find the areas of computer science that are the most interesting to me and things I could see myself doing as a career.
+        Recently I have experienced more of what data analytics is like and I have really enjoyed getting to work with big data and determining the best way to store the data using technologies like <a href="https://landing.aiven.io/en/aiven-for-postgresql/?gclid=Cj0KCQjwtMCKBhDAARIsAG-2Eu_f1lWeuklIDjJ71pv1nHRrDlF7_KCMLcSdC_LGH5zw0UEOG-yexYwaAt0UEALw_wcB">pSQL</a> as well as turn the raw data into useful information with calculations.
+      </p>
+      </div>
 
 
+      <div class="row text-center">
+        <a href="Updated_Resume.pdf">My Resume</a>
+      </div>
+
+    <script src="darkMode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>

@@ -10,6 +10,19 @@
 </head>
 
 <body>
+  <style>
+    :root{
+      --primary-color: white;
+      --secondary-color: rgb(94, 94, 94);
+    }
+    .dark-theme{
+      --primary-color: rgb(94, 94, 94);
+      --secondary-color: white;
+    }
+    body{
+      background:var(--primary-color);
+    }
+  </style>
     <div class="cont">
         <ul class="nav">
           <li class="nav-item">
@@ -25,14 +38,31 @@
             <a class="nav-link" href="service.html">Service</a>
           </li>
         </ul>
+        <button type="button" onclick="toggleDarkMode()" style="color: var(--color);" style="background-color: var(--secondary-color);">Toggle Toggle DarkMode</button>
       </div>
     <div class="cont">
         <div class="row text-center">
-                <div class="p-2 border bg-light">Portfolio Page!</div>
+                <div class="p-2 border" style="background-color: var(--secondary-color); color: var(--primary-color);">Portfolio Page!</div>
         </div>
     </div>
 
 
+    <div class="row text-center" width="80%" style="color: var(--secondary-color); padding: 40pt;">
+    Throughout the many computer science courses I have taken over the years I have been able to create many projects that have enhanced my learning.
+    These projects range in complexity from a small game I made in scratch in my high school introductory course to a movie recommendation service using databases and multiple programming languages, 
+    which I am currently working on. During the last two years of college my technical projects have been more focused on specfic topics that we are learning at the time.
+    Some of these projects included data extraction and manipulation, algorithmic problem solving, creating and using linked lists, and projects centered on a specific data structure.
+    A project I would like to complete and one my brother, who is also interested in computer science, and I have always talked about working on together is a tic tac toe game that has an automated opponent that will never lose.
+    This project would be a lot of fun to complete because there are several different ways to implement how the automated opponent would choose the current spot to play.
+
+    </div>
+
+    <div class="row text-center">
+      <a href="https://github.tamu.edu/brayden-sherrod/CSCE_315_Lab">My Most Recent Project on GitHub</a>
+    </div>
+
+    
+    <script src="darkMode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
